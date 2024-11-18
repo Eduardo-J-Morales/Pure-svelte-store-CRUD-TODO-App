@@ -156,4 +156,16 @@ input[type="text"] {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
 </style>
