@@ -44,10 +44,17 @@ function handleSubmit() {
     newTodoText = '';
   }
 }
+
+onMount(()=> null)
 </script>
 
 <main>
- 
+ <div class="todo-app">
+  <div class="todo-container">
+    <h1>Svelte Todo</h1>
+    <form on:submit|preventDefault={handleSubmit}></form>
+  </div>
+ </div>
 </main>
 
 <style>
