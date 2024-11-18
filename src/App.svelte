@@ -99,6 +99,7 @@ onMount(()=> null)
         class:active={$todoStore.filter === 'completed'}
         on:click={() => todoStore.setFilter('completed')}
         >Completed</button>
+
       </div>
     </div>
   </div>
@@ -106,5 +107,6 @@ onMount(()=> null)
 </main>
 
 <style>
+
 
 </style>
