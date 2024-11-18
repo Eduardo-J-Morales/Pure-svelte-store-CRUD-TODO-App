@@ -54,14 +54,17 @@ onMount(()=> null)
     <h1>Svelte Todo</h1>
     
     <form on:submit|preventDefault={handleSubmit}>
-      <input 
-      type="text" 
-      bind:value={newTodoText} 
+      <div class="input-group">
+
+        <input 
+        type="text" 
+        bind:value={newTodoText} 
       placeholder="What needs tod be done?"
       />
       <button type="submit">Add</button>
+    </div>
     </form>
-
+    
     <ul>
       {#each filteredTodos as todo (todo.id)}
         <li class:completed={todo.completed}>
@@ -137,5 +140,10 @@ h1 {
   text-align: center;
   color: #4a5568;
   margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
 }
 </style>
