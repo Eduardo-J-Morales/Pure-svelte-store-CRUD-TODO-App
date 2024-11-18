@@ -167,5 +167,10 @@ button {
   transition: background-color 0.3s ease;
 }
 
+form button { 
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 
 </style>
