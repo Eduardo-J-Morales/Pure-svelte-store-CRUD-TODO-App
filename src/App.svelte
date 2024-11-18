@@ -212,7 +212,14 @@ li:last-child {
   padding: 0 0.5rem;
 }
 
-
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #718096;
+}
 
 
 </style>
