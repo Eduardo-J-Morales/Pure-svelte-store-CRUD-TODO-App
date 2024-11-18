@@ -167,10 +167,15 @@ button {
   transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #3182ce;
+}
+
 form button { 
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 
 
 </style>
