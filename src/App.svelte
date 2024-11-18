@@ -52,7 +52,15 @@ onMount(()=> null)
  <div class="todo-app">
   <div class="todo-container">
     <h1>Svelte Todo</h1>
-    <form on:submit|preventDefault={handleSubmit}></form>
+    <form on:submit|preventDefault={handleSubmit}>
+      <input 
+      type="text" 
+      bind:value={newTodoText} 
+      placeholder="What needs tod be done?"
+      />
+      <label for=""></label>
+
+    </form>
   </div>
  </div>
 </main>
