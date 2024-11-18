@@ -88,7 +88,7 @@ onMount(()=> null)
         <button
         class:active={$todoStore.filter === 'all'}
         on:click={() => todoStore.setFilter('all')}
-        >All</button>
+        >All </button>
       </div>
     </div>
   </div>
