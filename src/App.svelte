@@ -1,9 +1,25 @@
 <script>
 import { onMount } from 'svelte';
-import { writable } form 'svelte/store'
+import { writable } from 'svelte/store'
 
 function createTodoStore() {
-  const { subscribe, update } = 
+  const { subscribe, update } = writable({
+    todo: [],
+    filter: 'all'
+  });
+
+  return {
+    subscribe,
+    addTodo: (text) => update(state => {
+      const newTodo = { id: Date.now(), text, completed: false };
+      return { ...state, todo: [...state.todo, newTodo]}
+    }),
+    toogleTodo: (id) => update(state => {
+      const updatedTodo = state.todo.map(todo => {
+        
+      })
+    })
+  }
 }
 </script>
 
