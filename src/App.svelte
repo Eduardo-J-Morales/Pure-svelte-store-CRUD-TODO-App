@@ -35,6 +35,9 @@ $: filteredTodos = $todoStore.todo.filter(todo => {
   if ($todoStore.filter === 'completed') return todo.completed;
   return true;
 })
+
+
+
 </script>
 
 <main>
