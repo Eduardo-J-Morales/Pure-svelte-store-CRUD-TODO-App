@@ -128,4 +128,8 @@ onMount(()=> null)
   box-shadow: 0 0 20px rgba(0,0,0, 0.1);
   overflow: hidden;
 }
+
+.todo-container {
+  padding: 2rem;
+}
 </style>
