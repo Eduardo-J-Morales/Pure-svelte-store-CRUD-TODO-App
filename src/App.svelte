@@ -38,6 +38,12 @@ $: filteredTodos = $todoStore.todo.filter(todo => {
 
 $: remainingTodos = $todoStore.todo.filter(todo => !todo.completed).length
 
+function handleSubmit() {
+  if (newTodoText.trim() !== '') {
+    todoStore.addTodo(newTodoText.trim());
+    newTodoText = '';
+  }
+}
 </script>
 
 <main>
