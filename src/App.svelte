@@ -221,5 +221,20 @@ li:last-child {
   color: #718096;
 }
 
+.filters button {
+  background: none;
+  border: none;
+  color: #4a5568;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.filters button.active {
+  background-color: #4299e1;
+  color: white;
+
+}
 
 </style>
