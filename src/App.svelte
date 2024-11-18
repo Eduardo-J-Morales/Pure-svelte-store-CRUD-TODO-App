@@ -52,15 +52,36 @@ onMount(()=> null)
  <div class="todo-app">
   <div class="todo-container">
     <h1>Svelte Todo</h1>
+    
     <form on:submit|preventDefault={handleSubmit}>
       <input 
       type="text" 
       bind:value={newTodoText} 
       placeholder="What needs tod be done?"
       />
-      <label for=""></label>
-
+      <button type="submit">Add</button>
     </form>
+
+    <ul>
+      {#each filteredTodos as todo (todo.id)}
+        <li class:completed={todo.completed}>
+        <div class="todo-item">
+          <input 
+          type="checkbox"
+          checked={todo.completed}
+          on:change={() => todoStore.toggleTodo(todo.id)}
+          id={`todo-${todo.id}`}
+          />
+          <label for={`todo-${todo.id}`}>{todo.text}</label>
+        </div>
+        <button
+        on:click={() => todoStore.deleteTodo(todo.id)}
+        class="delete-btn"
+        aria-label="Delete Todo"
+        >x</button>
+        </li>
+      {/each}
+    </ul>
   </div>
  </div>
 </main>
