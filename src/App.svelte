@@ -94,6 +94,11 @@ onMount(()=> null)
         class:active={$todoStore.filter === 'active'}
         on:click={() => todoStore.setFilter('active')}
         >Active</button>
+
+        <button
+        class:active={$todoStore.filter === 'completed'}
+        on:click={() => todoStore.setFilter('completed')}
+        >Completed</button>
       </div>
     </div>
   </div>
