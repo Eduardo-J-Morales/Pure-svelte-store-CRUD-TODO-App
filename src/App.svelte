@@ -176,6 +176,23 @@ form button {
   border-bottom-right-radius: 5px;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2d8f0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
 
 
 </style>
