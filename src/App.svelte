@@ -15,11 +15,12 @@ function createTodoStore() {
       return { ...state, todo: [...state.todo, newTodo]}
     }),
     toogleTodo: (id) => update(state => {
-      const updatedTodo = state.todo.map(todo => {
-        
-      })
-    })
-  }
+      const updatedTodo = state.todo.map(todo => todo.id === id ? {...todo, completed: !todo.completed} : todo
+      );
+      return { ...state, todo: updatedTodo }
+    }),
+
+   
 }
 </script>
 
