@@ -132,4 +132,10 @@ onMount(()=> null)
 .todo-container {
   padding: 2rem;
 }
+
+h1 {
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
 </style>
