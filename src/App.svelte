@@ -203,6 +203,16 @@ li:last-child {
   color: #a0aec0;
 }
 
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #e53e3e;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+
 
 
 </style>
