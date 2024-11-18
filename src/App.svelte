@@ -26,6 +26,11 @@ function createTodoStore() {
     setFilter: (filter) => update(state => ({ ...state, filter }))
   }
 }
+
+const todoStore = createTodoStore();
+let newTodoText = ''
+
+
 </script>
 
 <main>
