@@ -2,6 +2,9 @@
 import { onMount } from 'svelte';
 import { writable } form 'svelte/store'
 
+function createTodoStore() {
+  const { subscribe, update } = 
+}
 </script>
 
 <main>
