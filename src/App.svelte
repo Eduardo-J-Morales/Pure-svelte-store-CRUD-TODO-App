@@ -36,7 +36,7 @@ $: filteredTodos = $todoStore.todo.filter(todo => {
   return true;
 })
 
-
+$: remainingTodos = $todoStore.todo.filter(todo => !todo.completed).length
 
 </script>
 
