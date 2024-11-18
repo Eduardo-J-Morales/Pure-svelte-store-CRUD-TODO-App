@@ -118,4 +118,14 @@ onMount(()=> null)
   justify-content: center;
   align-items: center;
 }
+
+.todo-app {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.1);
+  overflow: hidden;
+}
 </style>
