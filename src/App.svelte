@@ -146,4 +146,14 @@ h1 {
   display: flex;
   margin-bottom: 1rem;
 }
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 6px solid #e2e8f0;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 </style>
