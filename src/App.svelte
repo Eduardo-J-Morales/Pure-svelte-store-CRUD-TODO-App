@@ -193,6 +193,16 @@ li:last-child {
   border-bottom: none;
 }
 
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.completed label {
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
 
 
 </style>
