@@ -23,7 +23,8 @@ function createTodoStore() {
       const filteredTodo = state.todo.filter(todo => todo.id !== id);
       return { ...state, todo: filteredTodo }
     }),
-   
+    setFilter: (filter) => update(state => update(state => ({...state, filter})))
+  }
 }
 </script>
 
