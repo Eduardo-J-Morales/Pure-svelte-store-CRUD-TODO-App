@@ -82,6 +82,15 @@ onMount(()=> null)
         </li>
       {/each}
     </ul>
+    <div class="todo-footer">
+      <span>{remainingTodos} item{remainingTodos === 1 ? 's': '' } left</span>
+      <div class="filters">
+        <button
+        class:active={$todoStore.filter === 'all'}
+        on:click={() => todoStore.setFilter('all')}
+        >All</button>
+      </div>
+    </div>
   </div>
  </div>
 </main>
