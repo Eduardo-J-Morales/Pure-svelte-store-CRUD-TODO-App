@@ -19,7 +19,10 @@ function createTodoStore() {
       );
       return { ...state, todo: updatedTodo }
     }),
-
+    deleteTodo: (id) => update(state => {
+      const filteredTodo = state.todo.filter(todo => todo.id !== id);
+      return { ...state, todo: filteredTodo }
+    }),
    
 }
 </script>
