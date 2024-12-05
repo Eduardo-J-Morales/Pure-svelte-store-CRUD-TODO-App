@@ -1,47 +1,49 @@
-# Svelte + Vite
-
-This template should help get you started developing with Svelte in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
-
-## Need an official Svelte framework?
-
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
-
-## Technical considerations
-
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+<body> 
+  <h1>Pure-svelte-store-CRUD-TODO-App</h1> 
+  
+  <p>A simple CRUD To-Do application built using Svelte and Svelte Store for state management.</p> 
+  
+  <h2>Table of Contents</h2> 
+  
+  <ul> 
+    <li><a href="#about">About</a></li> 
+    <li><a href="#features">Features</a></li> 
+    <li><a href="#installation">Installation</a></li> 
+    <li><a href="#usage">Usage</a></li> 
+    <li><a href="#contributing">Contributing</a></li> 
+    <li><a href="#license">License</a></li> 
+  </ul> 
+  
+  <h2 id="about">About</h2> 
+  
+  <p>This project is a simple To-Do application that demonstrates the use of Svelte and Svelte Store for state management. It includes basic CRUD operations for managing to-do items.</p> 
+  
+  <h2 id="features">Features</h2> 
+  
+  <ul> 
+    <li>Add new to-do items</li> 
+    <li>Edit existing to-do items</li> 
+    <li>Delete to-do items</li> 
+    <li>Mark to-do items as completed</li> 
+    <li>Filter tasks by status (all, active, completed)</li> 
+    <li>Counter for remaining uncompleted tasks</li> 
+  </ul> 
+  
+  <h2 id="installation">Installation</h2> 
+  
+  <pre><code> git clone https://github.com/Eduardo-J-Morales/Pure-svelte-store-CRUD-TODO-App.git cd Pure-svelte-store-CRUD-TODO-App npm install </code></pre> 
+  
+  <h2 id="usage">Usage</h2> 
+  
+  <pre><code> npm start </code></pre> 
+  
+  <p>Open your browser and navigate to <a href="http://localhost:3000">http://localhost:3000</a> to see the application in action.</p> 
+  
+  <h2 id="contributing">Contributing</h2> 
+  
+  <p>Contributions are welcome! Please fork this repository and submit a pull request with your changes.</p> 
+  
+  <h2 id="license">License</h2> 
+  
+  <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p> 
+  
